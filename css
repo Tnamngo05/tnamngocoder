@@ -1,0 +1,435 @@
+:root {
+  --pink-color: #f2726a;
+    --white-color: #e2e8f0;
+  --dark-color: #1a202c;
+}
+      body.dark{
+            --dark-color: #070808;
+            --white-color: #1a202c;
+          }
+        .--savior-overlay-transform-reset {
+            transform: none !important;
+        }
+
+        .--savior-overlay-z-index-top {
+            z-index: 2147483643 !important;
+        }
+
+        .--savior-overlay-position-relative {
+            position: relative;
+        }
+
+        .--savior-overlay-overflow-x-visible {
+            overflow-x: visible !important;
+        }
+
+        .--savior-overlay-overflow-y-visible {
+            overflow-y: visible !important;
+        }
+
+        .--savior-overlay-z-index-reset {
+            z-index: auto !important;
+        }
+
+        .--savior-overlay-display-none {
+            display: none !important;
+        }
+
+        .--savior-overlay-clearfix {
+            clear: both;
+        }
+
+        .--savior-overlay-reset-filter {
+            filter: none !important;
+            backdrop-filter: none !important;
+        }
+
+        .--savior-tooltip-host {
+            z-index: 9999;
+            position: absolute;
+            top: 0;
+        }
+
+        /*Override css styles for Twitch.tv*/
+        main.--savior-overlay-z-index-reset {
+            z-index: auto !important;
+        }
+
+        main.--savior-overlay-z-index-top {
+            z-index: auto !important;
+        }
+
+        main.--savior-overlay-z-index-top .channel-root__player-container+div,
+        main.--savior-overlay-z-index-top .video-player-hosting-ui__container+div {
+            opacity: 0.1;
+        }
+
+        /*Dirty hack for facebook big video page e.g: https://www.facebook.com/abc/videos/...*/
+        .--savior-backdrop {
+            position: fixed !important;
+            z-index: 2147483642 !important;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        /*.--savior-overlay-twitter-video-player {
+            position: fixed;
+            width: 80%;
+            height: 80%;
+            top: 10%;
+            left: 10%;*/
+        }
+
+        /* Fix conflict css with zingmp3 */
+        .zm-video-modal.--savior-overlay-z-index-reset {
+            position: absolute;
+        }
+
+        /* Dirty hack for xvideos99 */
+        #page #main.--savior-overlay-z-index-reset {
+            z-index: auto !important;
+        }
+
+        /* Overlay for ok.ru */
+        #vp_w.--savior-overlay-z-index-reset.media-layer.media-layer__video {
+            position: absolute;
+            overflow-y: hidden;
+        }
+
+        /* Fix missing controller for tv.naver.com */
+        .--savior-overlay-z-index-top.rmc_controller,
+        .--savior-overlay-z-index-top.rmc_setting_intro,
+        .--savior-overlay-z-index-top.rmc_highlight,
+        .--savior-overlay-z-index-top.rmc_control_settings {
+            z-index: 2147483644 !important;
+        }
+
+        /* Dirty hack for douyi.com */
+        .swiper-wrapper.--savior-overlay-z-index-reset .swiper-slide:not(.swiper-slide-active),
+        .swiper-wrapper.--savior-overlay-transform-reset .swiper-slide:not(.swiper-slide-active) {
+            display: none;
+        }
+
+        .videoWrap+div>div {
+            pointer-events: unset;
+        }
+
+        /* Dirty hack for fpt.ai */
+        .mfp-wrap.--savior-overlay-z-index-top {
+            position: relative;
+        }
+
+        .mfp-wrap.--savior-overlay-z-index-top .mfp-close {
+            display: none;
+        }
+
+        .mfp-wrap.--savior-overlay-z-index-top .mfp-content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset+nav {
+            z-index: -1 !important;
+        }
+
+        section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset section.--savior-overlay-z-index-reset div.--savior-overlay-z-index-reset~div {
+            position: relative;
+        }
+
+        div[class^="tiktok"].--savior-overlay-z-index-reset {
+            z-index: 2147483644 !important;
+        }
+
+        @-moz-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+        .card__img {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    transition: 0.25s;
+    margin: 0 auto;
+    transform: translateY(25px);
+    border-radius: 50%;
+    border: 4px solid var(--pink-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.card__img:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: unset;
+  border: unset;
+  transform: unset;
+    transition: all 0.5s ease-in-out;
+}
+.card_name
+{
+    transform: translateY(15px);
+}
+      body.dark .card_name
+      {
+    color: var(--dark-color);
+
+      }
+      body.dark .mb-0
+      {
+        color: var(--dark-color);
+      }
+.btn.follow
+{
+    color: var(--white-color);
+    background-color: var(--pink-color);
+    border-color: var(--pink-color);
+    margin-bottom: 5px;
+}
+.btn.follow:hover
+{
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+   color: var(--white-color);
+}
+.btn.message
+{
+    color: var(--pink-color);
+    border-color: var(--pink-color);
+    margin-bottom: 5px;
+} 
+.btn.message:hover
+{  
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    color: var(--pink-color);
+}
+.btn.edit
+{
+    height: 70%;
+    color: var(--white-color);
+    background-color: var(--pink-color);
+    border-color: var(--pink-color);
+    margin-top: 0.7rem;
+}
+.info-to {
+    color: var(--pink-color) !important;
+}
+.bg1-primary {
+    background-color: var(--pink-color) !important;
+    animation: loadingg 2.5s ease-in-out;
+}
+.fullname{
+    color: #DC143C;
+
+}
+.nickname{
+    color: #FFA500;
+
+}
+.sn{
+    color: #3CB371;
+
+}
+.email{
+    color: #0000FF;
+
+}
+.phone{
+    color: #CC00CC;
+}
+.diachi{
+    color: #FF3333;
+}
+.typing{
+    margin-top: 10px;
+    color: #FF0000;
+}
+.name2{
+    color: #33CC00;
+    padding-left: 10px;
+}
+.dungkon{
+    color: #008B8B;
+    padding-left: 10px;
+}
+.sn2{
+    color: #00FFFF;
+    padding-left: 10px;
+}
+.email2{
+    color: #0000CD;
+    padding-left: 10px;
+}
+.phone2{
+    color: #800080;
+    padding-left: 10px;
+}
+.diachi2{
+    color: #008080;
+    padding-left: 10px;
+}
+.audio {
+      width: 50%;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 0px;
+      margin-left: 30%;
+      text-transform: uppercase;
+      flex:1;
+      border-radius: 0px;
+    }
+
+@keyframes loadingg {
+    0%
+    {
+        transform: translateX(-400px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+      .list-group-i{
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--white-color);
+    border: 1px solid rgba(0,0,0,.125);
+}
+     body.dark .d-flex,
+      body.dark .card-body small,
+      body.dark .style-switcher .style-switcher-toggler i,
+      body.dark .style-switcher .day-night i{
+        color: var(--dark-color);
+      }
+
+      body.dark .style-switcher.open{
+        background: var(--dark-color);
+      }
+body {
+              margin-top: 20px;
+              text-align: left;
+              background: var(--white-color);
+          }
+
+          .main-body {
+              padding: 15px;
+          }
+
+          .card {
+              box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+          }
+
+          .card {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              min-width: 0;
+              word-wrap: break-word;
+              background-color: var(--white-color);
+              background-clip: border-box;
+              border: 0 solid rgba(0, 0, 0, .125);
+              border-radius: .25rem;
+          }
+
+          .card-body {
+              flex: 1 1 auto;
+              min-height: 1px;
+              padding: 1rem;
+          }
+
+          .gutters-sm {
+              margin-right: -8px;
+              margin-left: -8px;
+          }
+
+          .gutters-sm>.col,
+          .gutters-sm>[class*=col-] {
+              padding-right: 8px;
+              padding-left: 8px;
+          }
+        .container .main-body .main-breadcrumb
+        {
+          color: var(--dark-color);
+          background: var(--white-color);
+        }
+          .list-group
+        {
+          background: var(--white-color);
+        }
+          .mb-3,
+          .my-3 {
+              margin-bottom: 1rem !important;
+          }
+
+          .bg-gray-300 {
+              background-color: #e2e8f0;
+          }
+
+          .h-100 {
+              height: 100% !important;
+          }
+
+          .shadow-none {
+              box-shadow: none !important;
+          }
+        .card_name h4{
+              position: relative;
+  overflow: hidden;
+  border-right: .15em solid var(--dark-color); 
+  white-space: nowrap; 
+  width: 0;
+  animation: 
+      typing 2s steps(30, end) forwards,
+      blink .75s infinite;
+  animation-delay: 1s;
+          }
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: var(--pink-color); }
+}
